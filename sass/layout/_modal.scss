@@ -1,0 +1,218 @@
+/* modal window */
+.backdrope{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrope.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);/*gether 2 rules to centr modal window*/
+    
+    min-width: 528px;
+    min-height: 581px;
+    padding: 40px;
+
+    background-color: $main-bg-color;
+    border-radius: 3px;
+    /* transform: scale(1); */
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrope.is-hidden .modal{
+    /*for animation modal window*/
+    transform: translate(-50%, -50%) scale(0.5);/*gether 2 rules to centr modal window*/
+    /* transform: scale(0.5); */
+    opacity: 0;
+    pointer-events: none;
+}
+.close-button{
+    appearance: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    min-width: 30px;
+    min-height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: $main-bg-color;
+
+    border: 1px solid $button-disable;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus{
+        border-color: $hover-close-btn-color;
+    }
+}
+
+.modal__title{
+    margin-top: 0;
+    margin-bottom: 30px;
+    
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+
+    color: $title-text-color;
+}
+.input-wrapper{
+    position: relative;
+    margin-bottom: 28px;
+    margin-top: 0;
+}
+
+.modal-form__input{
+    width: 100%;
+    font-size: 16px;
+    
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    border-width: 1px;
+    border-color: $main-text-color;
+    border-radius: 4px;
+
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.modal-form__label{
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.modal-form__input:focus + .modal-form__label,
+.modal-form__input:not(:placeholder-shown) + .modal-form__label{
+    color: $accent-text-color;
+    fill: $accent-text-color;
+    top: -50%;
+    left: 42px;
+    transform: translateY(50%);
+}
+
+.modal-form__icon{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+.modal-form__input:focus ~ .modal-form__icon{
+    fill: $accent-text-color;
+}
+
+.textarea-wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+.modal-form__textarea{
+    display: block;
+    resize: none;
+    width: 100%;
+    height: 120px;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    border-radius: 4px;
+}
+
+.modal-form__commentTag{
+    position: absolute;
+    top:-6%;
+    left: 0;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17;
+} 
+
+.modal-form__textarea:focus-within + .modal-form__commentTag,
+.modal-form__textarea:not(:placeholder-shown) + .modal-form__commentTag{
+    left: 42px;
+    color: $accent-text-color;
+}
+
+.checkbox__input{
+    // -moz-appearance: none;
+    // -webkit-appearance: none;
+    // appearance: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox__label{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.checkbox__icon{
+    display: inline-block;
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid $title-text-color;
+    border-radius: 3px;
+}
+
+.checkbox__input:checked + .checkbox__icon{
+    background-color: $accent-text-color;
+    background-image: url(../images/check-icon.svg#check-icon);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-origin: content-box;
+    border: transparent;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.modal__button{
+ @extend %btn;
+
+ padding: 10px 30px 10px 30px;
+}

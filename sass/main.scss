@@ -1,0 +1,22 @@
+//common styles
+@import'./utils/color-vars';   //+++
+@import'./base/model-type';    //+++
+@import'./base/body';          //+++
+
+@import'./components/list';    //+++
+@import'./base/container';     //+++
+@import'./components/section'; //+++
+//buttons
+@import'./components/placeholders';
+//footer header
+@import'./layout/header';
+@import'./layout/footer';
+//pages blocks
+@import'./layout/hero';
+@import'./layout/advantage';     //+/-advantage__list=>advantage???
+@import'./layout/whatWeDoing';
+@import'./layout/team';          //+++ Можно вынести лист иконок общий к батонам
+@import'./layout/ourclients';
+@import'./layout/portfolio';
+//modal window
+@import'./layout/modal';

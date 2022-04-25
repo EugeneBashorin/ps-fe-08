@@ -1,0 +1,22 @@
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+ .section__title{
+    color: $title-text-color;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.22;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+.section__title--hidden{
+   position: absolute;
+   clip: rect(0 0 0 0);
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+}

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>WebStudio - IT решения для бизнеса</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="container header-container">
+            <nav class="main-nav">
+                <a href="#" class="logo logo--rightIndent"><span class="logo__prepend">Web</span>Studio</a>
+                <ul class="list main-nav__list">
+                    <li class="main-nav__item"><a href="/index.html" class="link main-nav__link">Студия</a></li>
+                    <li class="main-nav__item"><a href="" class="link main-nav__link main-nav__link--current">Портфолио</a></li>
+                    <li class="main-nav__item"><a href="" class="link main-nav__link">Контакты</a></li>
+                </ul>            
+            </nav>
+            <ul class="nav-contact list">
+                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link nav-contact__link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="nav-contact__item"><a href="tel:+38096111111" class="link nav-contact__link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--main-->
+    <main>
+        <!--Portfolio-->
+        <section class="section">
+            <div class="container">
+                <h1 class="section__title section__title--hidden">Примеры работ</h1>
+                <ul class="product-tab list">
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Веб-сайты</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--active">Все</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Приложения</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Дизайн</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Маркетинг</button></li>
+                </ul>
+                <ul class="list grid portfolio-cases">
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-1.jpg" alt="Разработка Веб сайтов">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>
+                        <div class="grid__meta">
+                            <p class="grid__title">Технокряк</p>
+                            <p class="grid__subtitle">Веб-сайт</p>
+                        </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-2.jpg" alt="Разработка постеров и банерной рекламы">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>                  
+                        <div class="grid__meta">
+                        <p class="grid__title">Постер New Orlean vs Golden Star</p>
+                        <p class="grid__subtitle">Дизайн</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-3.jpg" alt="Разработка мобилльных приложений">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Ресторан Seafood</p>
+                        <p class="grid__subtitle">Приложение</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-4.jpg" alt="Разработка дизайна продукции">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект Prime</p>
+                        <p class="grid__subtitle">Маркетинг</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-5.jpg" alt="Разработка дизайна упаковки">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект Boxes</p>
+                        <p class="grid__subtitle">Приложение</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-6.jpg" alt="Поиск идеи для продвижения">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Inspiration has no Borders</p>
+                        <p class="grid__subtitle">Веб-сайт</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-7.jpg" alt="Разработка уникального дизайна продукции">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Издание Limited Edition</p>
+                        <p class="grid__subtitle">Дизайн</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-8.jpg" alt="Разработка макетов">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Проект LAB</p>
+                        <p class="grid__subtitle">Маркетинг</p>
+                    </div>
+                    </li>
+                    <li class="grid__item">
+                        <div class="img-overlay">
+                            <img class="grid__img" src="./images/portfolio-9.jpg" alt="Поиск точек роста вашего бизнеса">
+                            <div class="grid__discription">
+                                Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
+                            </div>
+                        </div>    
+                        <div class="grid__meta">
+                        <p class="grid__title">Growing Business</p>
+                        <p class="grid__subtitle">Приложение</p>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer>
+        <section class="section footer">
+            <div class="container">
+                <ul class="list footer__list">
+                    <li class="footer__item">
+                        <p class="logo footer__logo"><span class="logo__prepend">Web</span>Studio</p>
+                        <address class="adress">
+                            <ul class="footer-contact list">
+                                <li><span class="footer-contact__discript">г.Киев, пр-т Леси Украинки, 26</span></li>
+                                <li><a class="footer-contact__link" href="mailto:info@example.com">info@example.com</a></li>
+                                <li><a class="footer-contact__link" href="tel:+380991111111">+38 (099) 111-11-11</a></li>
+                            </ul>
+                        </address>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__title">присоединяйтесь</p>
+                        <ul class="list smm">
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#instagram"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#twitter"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#facebook"></use></svg></a>
+                            </li>
+                            <li class="smm__item">
+                                <a href="#" class="smm__link smm__link--grey"><svg class="smm__icon"><use href="./images/icons.svg#linkedin"></use></svg></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__item">
+                        <p class="footer__title">подпишитесь на рассылку</p>
+                        <form name="form-subscribe" class="footer__form" action="submit">
+                            <input type="email" class="footer__input" name="email" placeholder="E-mail" required>
+                            <button type="submit" class="button-footer">
+                                <span class="button__label">Подписаться</span>
+                                <svg class="button__icon" width="24" height="24">
+                                    <use href="./images/icon-send.svg#icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </li>
+                </ul>   
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

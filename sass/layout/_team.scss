@@ -1,0 +1,84 @@
+.team{
+    background-color: $second-bg-color;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+ 
+    &__item{
+        padding-bottom: 30px;
+        background-color: $main-bg-color;
+    
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                    0 1px 1px rgba(0, 0, 0, 0.2),
+                    0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    &__item:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &__image{
+        display: block;
+        margin-bottom: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__discript{
+        text-align: center;
+        color: $title-text-color;
+        font-weight: 500;
+        margin-top: 0;
+        margin-bottom: 10;
+    }
+ 
+    &__subdiscript{
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+/* smm links */
+.smm{
+    display: flex;
+    justify-content: center;
+
+    &__item{
+        border: none;   
+    }
+
+    &__item:not(:last-child){
+    margin-right: 10px;
+    }
+    &__icon{
+        width:20px;
+        height:20px;
+    }
+    /* common SMM link */
+    &__link{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px; 
+        border-radius: 50%;
+    }
+    &__link--accent{
+        background-color:  $main-bg-color;
+        fill: $main-text-color;
+    }
+    &__link--accent:hover,
+    &__link--accent:focus{
+        background-color: $button-active;
+        fill: $main-bg-color;
+    }
+}
