@@ -2,16 +2,20 @@ header{
     border-bottom: 1px solid $boder-color;
 }
 .header-container{
-    display: flex;
-    align-items: center; 
-    justify-content: space-around; 
-    height: 80px;
+  //  display: flex;
+  //  align-items: center; 
+  //  justify-content: space-around; 
+  //  height: 80px;
+  outline: 4px solid tomato;
 }
 .main-nav{
-   display: flex;
-   align-items: center;  
+   //display: flex;
+   //align-items: center;  
    padding-top: 24px;
    padding-bottom: 24px;
+
+//    display: none;
+
    /*navigation*/
     &__link{
         font-weight: 500;
@@ -36,7 +40,6 @@ header{
 }
 .main-nav__link--current{
     color: $accent-text-color;
-    //position: relative;
     &::after{
         content: '';
         position: absolute;
@@ -60,13 +63,10 @@ header{
     &__prepend{
         color: $accent-text-color;
     }
-
-    &--rightIndent{
-        margin-right: 93px;
-    }
 }
 /* Contacts Header */
 .nav-contact{
+    // display: none;
     display: flex;
     align-items: center;  
 }

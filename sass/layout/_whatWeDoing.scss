@@ -1,4 +1,7 @@
 .doing{
+    //hide for mob menu
+    display: none;
+    
     &__list{
     display: flex;  
     padding-left: 0;

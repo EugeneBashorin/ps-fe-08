@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  width: 1200px;
+  outline: 1px solid green;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
@@ -36,9 +36,15 @@ body {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -93,24 +99,10 @@ header {
 }
 
 .header-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 80px;
+  outline: 4px solid tomato;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
   /*navigation*/
@@ -167,10 +159,6 @@ header {
 
 .logo__prepend {
   color: #2196F3;
-}
-
-.logo--rightIndent {
-  margin-right: 93px;
 }
 
 /* Contacts Header */
@@ -306,30 +294,30 @@ header {
 }
 
 .section-hero {
+  width: 100%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/heroes-bg-1.jpg");
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/heroes-bg-1.jpg");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
-  max-width: 1600px;
-  height: 600px;
 }
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 252px;
-  padding-right: 252px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
+  line-height: 1.6;
   font-weight: 900;
-  line-height: 1.5;
   letter-spacing: 0.06em;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -342,20 +330,18 @@ header {
 }
 
 .advantage__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  outline: 1px solid tomato;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 94px;
 }
 
 .advantage__item {
-  width: 270px;
+  width: 100%;
+  outline: 1px solid tomato;
 }
 
 .advantage__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .advantage__overlay {
@@ -368,7 +354,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 270px;
+  width: 100%;
+  margin-bottom: 30px;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -383,10 +370,23 @@ header {
 }
 
 .advantage__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   color: #212121;
+}
+
+.advantage__discription {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.doing {
+  display: none;
 }
 
 .doing__list {
@@ -442,13 +442,14 @@ header {
   background-color: #f5f4fa;
 }
 
+.team__title {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
 .team__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  outline: 1px solid tomato;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -463,10 +464,6 @@ header {
           box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
-.team__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team__image {
   display: block;
   margin-bottom: 30px;
@@ -475,6 +472,7 @@ header {
 }
 
 .team__discript {
+  font-size: 16px;
   text-align: center;
   color: #212121;
   font-weight: 500;
@@ -485,7 +483,7 @@ header {
 .team__subdiscript {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16;
 }
 
 /* smm links */
