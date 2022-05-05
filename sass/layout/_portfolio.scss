@@ -1,11 +1,23 @@
 .product-tab{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 0;
-    margin-bottom: 56px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+        &__item{
+            margin-bottom: 15px;
+            } 
+    }
 
     &__item:not(:last-child){
     margin-right: 8px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
     }
 }
 .product-tab__button{
@@ -39,19 +51,35 @@
   
 //item GRID
     .grid{
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-
-    &__item{
-        margin: 15px;
-        flex-basis: calc((100%-(15px*6))/3);
+        @media screen and (max-width: 767px){
+    &__item:not(:last-child){
+        margin-bottom: 30px;
     }
+}
     &__item:hover{
         box-shadow: 1px 4px 6px rgba(0,0,0,0.16),
                     0 4px 4px rgba(0,0,0,0.06),
                     0 1px 1px rgba(0,0,0,0.12);
     }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+
+        &__item{
+            margin: 15px;
+            flex-basis: calc((100% - (15px * 4)) / 2);
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        &__item{
+            margin: 15px;
+            flex-basis: calc((100% - (15px * 6)) / 3);
+        }
+    }
+
+
 
     &__img{
     display: block;

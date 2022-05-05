@@ -1,7 +1,11 @@
+.section-doing{
+    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    } 
+}
 .doing{
-    //hide for mob menu
-    display: none;
-    
+    //hide for mob/tab menu
     &__list{
     display: flex;  
     padding-left: 0;

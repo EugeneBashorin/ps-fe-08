@@ -15,17 +15,31 @@
     <header>
         <div class="container header-container">
             <a href="#" class="logo"><span class="logo__prepend">Web</span>Studio</a>
-            <nav class="main-nav">
-                <ul class="list main-nav__list">
-                    <li class="main-nav__item"><a href="/index.html" class="link main-nav__link">Студия</a></li>
-                    <li class="main-nav__item"><a href="" class="link main-nav__link main-nav__link--current">Портфолио</a></li>
-                    <li class="main-nav__item"><a href="" class="link main-nav__link">Контакты</a></li>
-                </ul>            
-            </nav>
-            <ul class="nav-contact list">
-                <li class="nav-contact__item"><a href="mailto:info@devstudio.com" class="link nav-contact__link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
-                <li class="nav-contact__item"><a href="tel:+38096111111" class="link nav-contact__link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
-            </ul>
+            <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav-container" data-menu-button>
+                <svg class="mob-menu-icons" width="36" height="36" aria-label="mobile menu switcher">
+                    <use class="icon-close" href="./images/btn-close-icon.svg#btn-close-icon"></use>
+                    <use class="icon-menu" href="./images/btn-menu-icon.svg#btn-menu-icon"></use>
+                </svg>
+            </button>
+            <div class="nav-container" id="nav-container" data-menu>
+                <nav class="main-nav">
+                    <ul class="list main-nav__list">
+                        <li class="main-nav__item"><a href="/index.html" class="main-nav__link">Студия</a></li>
+                        <li class="main-nav__item"><a href="" class="link main-nav__link main-nav__link--current">Портфолио</a></li>
+                        <li class="main-nav__item"><a href="" class="link main-nav__link">Контакты</a></li>
+                    </ul>            
+                </nav>
+                <ul class="nav-contact list">
+                    <li class="nav-contact__item main-nav__mob-tel"><a href="tel:+38096111111" class="link nav-contact__link"><svg class="tel-icon"><use href="./images/icons.svg#smartphone"></use></svg>+38 (096) 111-11-11</a></li>
+                    <li class="nav-contact__item main-nav__mob-email"><a href="mailto:info@devstudio.com" class="link nav-contact__link"><svg class="mail-icon"><use href="./images/icons.svg#envelope"></use></svg>info@devstudio.com</a></li>
+                </ul>
+                <ul class="mob-social list">
+                    <li class="mob-social__item"><a href="#" class="link mob-social__link">Instagram</a></li>
+                    <li class="mob-social__item"><a href="#" class="link mob-social__link">Twitter</a></li>
+                    <li class="mob-social__item"><a href="#" class="link mob-social__link">Facebook</a></li>
+                    <li class="mob-social__item"><a href="#" class="link mob-social__link">Linkedln</a></li>
+                </ul>
+            </div>       
         </div>
     </header>
     <!--main-->
@@ -35,8 +49,8 @@
             <div class="container">
                 <h1 class="section__title section__title--hidden">Примеры работ</h1>
                 <ul class="product-tab list">
-                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Веб-сайты</button></li>
                     <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--active">Все</button></li>
+                    <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Веб-сайты</button></li>
                     <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Приложения</button></li>
                     <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Дизайн</button></li>
                     <li class="product-tab__item"><button type="button" class="product-tab__button product-tab__button--disable">Маркетинг</button></li>
@@ -202,5 +216,6 @@
             </div>
         </section>
     </footer>
+    <script src="./js/data-menu-button.js"></script>
 </body>
 </html>

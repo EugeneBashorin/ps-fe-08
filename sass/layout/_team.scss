@@ -1,25 +1,41 @@
 .team{
     background-color: $second-bg-color;
+ 
     &__title{
         font-size: 28px;
         line-height: 1.5;
         margin-bottom: 30px;
     }
     &__list{
-        outline: 1px solid tomato;
-
-        // for Desktop
-        // display: flex;
-        // justify-content: center;
-        // margin-left: auto;
-        // margin-right: auto;
         padding-left: 0;
         margin-top: 0;
         margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin: 0 -15px;
+        }
     }
  
     &__item{
         padding-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+            width: calc((100% - (15px * 4)) / 2);
+            margin: 15px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: calc((100% - (15px * 8)) / 4);
+            margin: 0 15px;
+        }
+
         background-color: $main-bg-color;
     
         border-bottom-left-radius: 4px;
@@ -28,12 +44,13 @@
         box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
                     0 1px 1px rgba(0, 0, 0, 0.2),
                     0 1px 3px rgba(0, 0, 0, 0.2);
+                    
     }
-
-//for Desktop
-    // &__item:not(:last-child){
-    //     margin-right: 30px;
-    // }
+    &__item:not(:last-child){
+        @media screen and (max-width: 767px) {
+            margin-bottom: 30px;
+        }
+    }
 
     &__image{
         display: block;
@@ -48,13 +65,13 @@
         color: $title-text-color;
         font-weight: 500;
         margin-top: 0;
-        margin-bottom: 10;
+        margin-bottom: 10px;
     }
  
     &__subdiscript{
         text-align: center;
         margin-top: 0;
-        margin-bottom: 16;
+        margin-bottom: 16px;
     }
 }
 
