@@ -84,14 +84,23 @@
                     <h2 class="section__title doing__title">Чем мы занимаемся</h2>
                     <ul class="list doing__list">
                         <li class="doing__item">
-                            <img src="./images/img-1.jpg" class="doing__image" alt="Разработка сайта">
+                            <img class="doing__image" alt="Разработка сайта"
+                            srcset="./images/doing_coding_desk_1x_370.jpg 1x, ./images/doing_coding_desk_2x_740.jpg 2x"
+                            src="./images/doing_coding_desk_1x_370.jpg"
+                            />
                             <div class="doing__discription">Десктопные приложения</div>
                         </li>
                         <li class="doing__item">
-                            <img src="./images/img-2.jpg" class="doing__image" alt="Разработка мобильный приложений">
+                            <img class="doing__image" alt="Разработка мобильный приложений"
+                            srcset="./images/doing_app_desk_1x_370.jpg 1x, ./images/doing_app_desk_2x_740.jpg 2x" 
+                            src="./images/doing_app_desk_1x_370.jpg" 
+                            />
                             <div class="doing__discription">Мобильные приложения</div></li>
                         <li class="doing__item">
-                            <img src="./images/img-3.jpg" class="doing__image" alt="Брендинг и нейминг">
+                            <img class="doing__image" alt="Брендинг и нейминг"
+                            srcset="./images/doing_design_desk_1x_370.jpg 1x, ./images/doing_design_desk_2x_740.jpg 2x"
+                            src="./images/doing_design_desk_1x_370.jpg" 
+                            />
                             <div class="doing__discription">Дизайнерские решения</div></li>
                     </ul>
                 </div>  
@@ -103,7 +112,30 @@
             <h2 class="section__title team__title">Наша команда</h2>
             <ul class="list team__list">
                 <li class="team__item">
-                    <img class="team__image" src="./images/img-4.jpg" alt="Product Designer">
+                    <picture class="team__image">
+                        <source 
+                            srcset="
+                                ./images/team_p-design_desc_1x_270.jpg 1x,
+                                ./images/team_p-design_desc_2x_540.jpg 2x,
+                            "
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                                ./images/team_p-design_tab_1x_354.jpg 1x,
+                                ./images/team_p-design_tab_2x_708.jpg 2x,
+                            "
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                                ./images/team_p-design_mob_1x_450.jpg 1x,
+                                ./images/team_p-design_mob_2x_900.jpg 2x
+                            "
+                            media="(min-width: 480px)"   
+                        />
+                        <img class="pic-img" src="./images/img-4.jpg" alt="Product Designer">
+                    </picture>
                     <p class="team__discript">Игорь Демьяненко</p>
                     <p class="team__subdiscript">Product Designer</p>
                     <ul class="list smm">
@@ -122,7 +154,30 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/img-5.jpg" alt="Frontend Developer">
+                    <picture class="team__image">
+                        <source
+                            srcset="
+                            ./images/team_dev_desk_1x_270.jpg 1x,
+                            ./images/team_dev_desk_2x_540.jpg 2x
+                            "
+                            media="(min-width: 1200px)"
+                        />
+                        <source
+                            srcset="
+                            ./images/team_dev_tab_1x_354.jpg 1x,
+                            ./images/team_dev_tab_2x_708.jpg 2x
+                            "
+                            media="(min-width: 768px)"
+                        />
+                        <source
+                            srcset="
+                            ./images/team_dev_mob_1x_450.jpg 1x,
+                            ./images/team_dev_mob_2x_900.jpg 2x
+                            "
+                            media="(min-width: 480px)"
+                        />
+                        <img class="pic-img" src="./images/img-5.jpg" alt="Frontend Developer">
+                    </picture>
                     <p class="team__discript">Ольга Репина</p>
                     <p class="team__subdiscript">Frontend Developer</p>
                     <ul class="list smm">
@@ -141,7 +196,30 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/img-6.jpg" alt="Marketing">
+                    <picture class="team__image"> 
+                        <source
+                            srcset="
+                            ./images/team_mark_desk_1x_270.jpg 1x,
+                            ./images/team_mark_desk_2x_540.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+                        <source
+                            srcset="
+                            ./images/team_mark_tab_1x_354.jpg 1x,
+                            ./images/team_mark_tab_2x_708.jpg 2x
+                            "
+                            media="(min-width:768px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/team_mark_mob_1x_450.jpg 1x,
+                        ./images/team_mark_mob_2x_900.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                    />
+                        <img class="pic-img" src="./images/img-6.jpg" alt="Marketing">
+                    </picture>
                     <p class="team__discript">Николай Тарасов</p>
                     <p class="team__subdiscript">Marketing</p>
                     <ul class="list smm">
@@ -160,7 +238,30 @@
                     </ul>
                 </li>
                 <li class="team__item">
-                    <img class="team__image" src="./images/img-7.jpg" alt="UI Designer">
+                    <picture class="team__image">
+                        <source
+                            srcset="
+                            ./images/team_ui_desk_1x_270.jpg 1x,
+                            ./images/team_ui_desk_2x_540.jpg 2x
+                            "
+                            media="(min-width:1200px)"
+                        />
+                        <source
+                        srcset="
+                        ./images/team_ui_tab_1x_354.jpg 1x,
+                        ./images/team_ui_tab_2x_708.jpg 2x
+                        "
+                        media="(min-width:768px)"
+                    />
+                    <source
+                        srcset="
+                        ./images/team_ui_mob_1x_450.jpg 1x,
+                        ./images/team_ui_mob_2x_900.jpg 2x
+                        "
+                        media="(min-width:480px)"
+                    />
+                        <img class="pic-img" src="./images/img-7.jpg" alt="UI Designer">
+                    </picture>
                     <p class="team__discript">Михаил Ермаков</p>
                     <p class="team__subdiscript">UI Designer</p>
                     <ul class="list smm">
